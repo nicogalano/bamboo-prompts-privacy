@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bamboo Prompts — Privacy Policy</title>
+  <style>
+    :root {
+      --bg:        #E6D3A3;
+      --surface:   #FBF6EC;
+      --text:      #2F5D3A;
+      --text-sec:  #5C7D62;
+      --accent:    #6FAF5E;
+      --border:    #C5B07A;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:        #162B1C;
+        --surface:   #1E3826;
+        --text:      #E6D3A3;
+        --text-sec:  #A8C9A0;
+        --accent:    #8FCA80;
+        --border:    #3D6645;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    header .icon { font-size: 2rem; }
+
+    header .app-name {
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 1.6rem;
+      margin-bottom: 0.25rem;
+      color: var(--text);
+    }
+
+    .updated {
+      font-size: 0.85rem;
+      color: var(--text-sec);
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-top: 1.75rem;
+      margin-bottom: 0.4rem;
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    .content { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="icon">🎋</span>
+      <span class="app-name">Bamboo Prompts</span>
+    </header>
+
+    <!-- Spanish -->
+    <div id="es" class="content">
+      <h1>Política de Privacidad</h1>
+      <p class="updated">Última actualización: 22 de marzo de 2026</p>
+
+      <h2>Datos que recopilamos</h2>
+      <p>Bamboo Prompts no recopila ningún dato personal. No se envía ninguna información tuya a servidores externos.</p>
+
+      <h2>Almacenamiento local</h2>
+      <p>Tus preferencias, historial de prompts y configuración se guardan únicamente en tu dispositivo. Nosotros nunca accedemos a esos datos.</p>
+
+      <h2>Compras in-app</h2>
+      <p>Las compras dentro de la app son procesadas íntegramente por Apple (App Store) o Google (Play Store). No accedemos ni almacenamos ningún dato de pago.</p>
+
+      <h2>Contacto</h2>
+      <p>Si tienes preguntas sobre esta política, escríbenos a <a href="mailto:nagalanodev@gmail.com">nagalanodev@gmail.com</a>.</p>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="content">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: March 22, 2026</p>
+
+      <h2>Data we collect</h2>
+      <p>Bamboo Prompts does not collect any personal data. No information about you is sent to external servers.</p>
+
+      <h2>Local storage</h2>
+      <p>Your preferences, prompt history, and settings are stored only on your device. We never access that data.</p>
+
+      <h2>In-app purchases</h2>
+      <p>In-app purchases are processed entirely by Apple (App Store) or Google (Play Store). We do not access or store any payment information.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this policy, reach us at <a href="mailto:nagalanodev@gmail.com">nagalanodev@gmail.com</a>.</p>
+    </div>
+  </div>
+
+  <script>
+    const lang = navigator.language?.startsWith('es') ? 'es' : 'en';
+    document.getElementById(lang).style.display = 'block';
+    document.documentElement.lang = lang;
+  </script>
+</body>
+</html>
